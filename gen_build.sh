@@ -1,7 +1,6 @@
 #!/bin/bash
 
-srcdir=
-
+srcdir=src
 if [[ -z "$srcdir" ]]; then
     printf "Set your source directory in gen_build.sh!\n"
 

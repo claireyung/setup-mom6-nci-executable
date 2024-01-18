@@ -1,11 +1,11 @@
 #!/bin/bash
 
 . ../gen_build.sh
-
+srcdir=../src
 # find include directories
 inc_dirs=($(find -L ${srcdir}/FMS -type d -name 'include') ${srcdir}/FMS/constants ${srcdir}/FMS/constants4 ${srcdir}/FMS/fms)
 inc_flags="$(printf -- "-I%s " "${inc_dirs[@]}")"
-cpp_defs="-Duse_deprecated_io"
+cpp_defs="-Duse_deprecated_io -Duse_MPI -Duse_netcdf"
 
 cat << EOF > build.ninja
 include ../config.ninja

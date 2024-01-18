@@ -10,4 +10,5 @@ build.ninja
 
 # binaries
 shared/libfms.a
-ocean_only_symmetric/MOM6
+MOM6
+!src/MOM6

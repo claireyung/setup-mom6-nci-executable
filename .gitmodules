@@ -22,3 +22,6 @@
 [submodule "src/MOM6"]
 	path = src/MOM6
 	url = https://github.com/mom-ocean/MOM6.git
+[submodule "src/SIS2"]
+	path = src/SIS2
+	url = https://github.com/NOAA-GFDL/SIS2.git
