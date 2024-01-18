@@ -1,5 +1,5 @@
-# setup-mom6
-This is a fork of Angus' ['https://github.com/angus-g/mom6-ninja-nci'](momg-ninja-nci) repo, with updates to work with the latest codebase available for running MOM6 and SIS2. Unlike the original repository, there's a `src` folder here which contains submodules corresponding to versions of each respective piece of source code that works with the compile scripts. Previously, one needed to clone the `https://github.com/NOAA-GFDL/MOM6-examples` repo, but as the code here was updated parts of the compile script would break. This repo serves to keep both pieces of the puzzle (compile scripts and coressponding source code) together. 
+# setup-mom6-nci
+This is a fork of Angus' [mom6-ninja-nci](https://github.com/angus-g/mom6-ninja-nci) repo, with updates to work with the latest codebase available for running MOM6 and SIS2. Unlike the original repository, there's a `src` folder here which contains submodules corresponding to versions of each respective piece of source code that works with the compile scripts. Previously, one needed to clone the `https://github.com/NOAA-GFDL/MOM6-examples` repo, but as the code here was updated parts of the compile script would break. This repo serves to keep both pieces of the puzzle (compile scripts and coressponding source code) together. 
 
 The rest of the readme is an updated version of Angus' original.
 
