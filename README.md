@@ -32,3 +32,6 @@ You now have a `MOM6` executable.
 
 ## Updating the source
 Most of the time, you will only be tweaking MOM6 source, so only MOM6 itself needs to be rebuilt. In many cases, changes to the source won't change the dependency order, so you can just re-run `ninja`, which will recompile only what is necessary, as any build system would. If the dependency order is changed (usually from added `use` statements here and there), re-run `./gen_build.sh`.
+
+## Symmetric? 
+This refers to the memory configuration. Symmetric means that, say, the eastward and westwards boundaries both end with a cell edge. In a nonsymmetric case, one would end with a cell edge, and the other with a cell centre. For regional configurations you need symmetric memory. If you want to change this, then simply replace `symmetric` with `nonsymmetric` where in the `gen_build.sh` files. 
