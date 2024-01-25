@@ -9,6 +9,7 @@ include ../config.ninja
 incflags = $incflags -I../shared -I${srcdir}/MOM6/config_src/memory/dynamic_symmetric -I${srcdir}/MOM6/src/framework
 ldflags = -lnetcdff -lnetcdf -L../shared -lfms
 fflags = $fflags_opt
+cppdefs = $cppdefs -Duse_AM3_physics -D_USE_LEGACY_LAND_ -Duse_deprecated_io -Duse_netcdf
 EOF
 
 # lists of source files
