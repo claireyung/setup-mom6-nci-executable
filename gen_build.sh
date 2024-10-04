@@ -1,6 +1,6 @@
 #!/bin/bash
 
-srcdir=src
+srcdir=/scratch/x77/cy8964/mom6/setup-mom6-nci/src
 if [[ -z "$srcdir" ]]; then
     printf "Set your source directory in gen_build.sh!\n"
 
