@@ -1,6 +1,6 @@
 #!/bin/bash
 
-srcdir=/scratch/x77/cy8964/mom6/setup-mom6-nci/src
+srcdir=/scratch/x77/cy8964/mom6/setup-mom6-nci-executable/src
 if [[ -z "$srcdir" ]]; then
     printf "Set your source directory in gen_build.sh!\n"
 
@@ -23,9 +23,9 @@ ld = mpifort
 ar = ar
 
 fflags = -fno-alias -auto -safe-cray-ptr -ftz -assume byterecl -i4 -r8 -nowarn -sox -g
-fflags_opt = $fflags -O2 -debug minimal -fp-model precise -qoverride-limits
+fflags_opt = $fflags -O2 -fp-model precise -xHost -traceback
 fflags_dbg = $fflags -O0 -check -check noarg_temp_created -check nopointer -warn -warn noerrors -fpe0 -traceback -ftrapuv -assume nobuffered_io
-cflags = -D__IFC -sox -g
+cflags = -g -O2
 
 cppdefs = -Duse_libMPI -Duse_netCDF -DSPMD
 arflags = rv
